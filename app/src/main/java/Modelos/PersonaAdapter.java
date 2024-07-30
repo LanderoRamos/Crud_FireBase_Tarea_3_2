@@ -31,8 +31,8 @@ public class PersonaAdapter extends ArrayAdapter<Persona> {
         TextView textViewNombre = convertView.findViewById(R.id.textViewNombre);
         TextView textViewApellido = convertView.findViewById(R.id.textViewApellido);
 
-        textViewNombre.setText(persona.getNombres());
-        textViewApellido.setText(persona.getApellidos());
+        textViewNombre.setText(persona.getNombres()+" "+persona.getApellidos());
+        textViewApellido.setText(persona.getFechanac());
 
         return convertView;
     }
